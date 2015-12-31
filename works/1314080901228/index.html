@@ -24,64 +24,138 @@
           </ul>
         </div>
 
-    <div class="container">
+  <script type="text/javascript" src="1.js" language="javascript" charset="gb2312"></script>  
+   
+    
+<div style="border:1px #000000 solid; width:240px; height:200px; margin-top:30px; margin-left:30px;  position:fixed; display:inline-table">
+<div style="border:1px #000000 solid; width:240px; height:40px; position:fixed; display:inline-table; background-color: #0066FF">
+<font size="+2">查询选项</font>
+</div>
+<div style="border:1px #000000 solid; margin-top:40PX; width:240px; height:160px; position:fixed; display:inline-table ; background-color: #CCFFFF">
+<span style="margin-left:15px">单据状态：<select style="width:120px">
+                 <option value ="全部">全部</option>
+				 <option value ="未入库">未入库</option>
+				 <option value ="已入库">已入库</option>
+          </select></span><br>
+<span style="margin-left:15px">起始时间： <input type="text" style="width:65px" value="2015-07-01" onFocus="HS_setDate(this)"></span><br>
+<span style="margin-left:15px">终止时间： <input type="text" style="width:65px" value="2015-12-31" onFocus="HS_setDate(this)"></span><br>
+<button style="width:180px; height:30px; margin-left:20px; margin-top:10px">查询</button>
+</div>
+</div>
+<div style="border:1px #000000 solid; width:1024px; height:200px; margin-top:30px; margin-left:280px;  position:fixed; display:inline-table">
+<div style="border:1px #000000 solid; width:1024px; height:40px; position:fixed; display:inline-table ;  background-color: #0066FF">
+<font size="+2">单据信息</font>
+</div>
+<div style="border:1px #000000 solid; margin-top:40PX; width:1024px; height:160px; position:fixed; display:inline-table  ; background-color: #CCFFFF">
+供应商： <select>
+                 <option value ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+				 <option value =""></option>
+          </select>  
+仓库：<select>
+                 <option value ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				 <option value ="">001</option>
+				 <option value ="">002</option>
+				 <option value ="">003</option>
+				 <option value ="">004</option>
+				 <option value ="">005</option>
+				 <option value ="">006</option>
+				 <option value ="">007</option>
+				 <option value ="">008</option>
+       </select>
+
+
+
+经手人：<select>
+                 <option value ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+				 <option value ="">张三</option>
+				 <option value ="">李四</option>
+				 <option value ="">王五</option>
+				 <option value ="">桃六</option>
+				 <option value ="">憋七</option>
+       </select>
+
+经手日期： <input type="text" style="width:100px" onFocus="HS_setDate(this)"><br>      <br>
+状态： <input type="text" name="state">     备注:<input type="text" style="width:600px"> <br>
+<button style="width:80px; height:35px; margin-top:30px; margin-left:55px">新建</button>
+<button style="width:80px; height:35px; margin-top:30px">保存</button>
+<button style="width:80px; height:35px; margin-top:30px">删除</button>
+<button style="width:80px; height:35px; margin-top:30px">确定</button>
+<button style="width:80px; height:35px; margin-top:30px">导出excel</button>
+<button style="width:80px; height:35px; margin-top:30px">入库</button>
+
+</div>
+</div>
+<div style="border:1px #000000 solid; width:240px; height:300px; margin-top:240px; margin-left:30px; position:fixed">
+<div style="border:1px #000000 solid; width:240px; height:40px; position:fixed; display:inline-table ;  background-color: #0066FF">
+<font size="+2">单据列表</font>
+</div>
+<div style="border:1px #000000 solid; margin-top:40PX;  width:240px; height:260px; position:fixed; display:inline-table  ; background-color: #CCFFFF">
+3.3
+</div>
+</div>
+<div style="border:1px #000000 solid; width:1024px; height:300px; margin-top:240px; margin-left:280px; position:fixed ">
+<div style="border:1px #000000 solid; width:1024px; height:40px; position:fixed; display:inline-table ;  background-color: #0066FF">
+<font size="+2">单据明细</font>
+</div>
+<div style="border:1px #000000 solid; margin-top:40PX; width:1024px; height:220px; position:fixed; display:inline-table ; background-color: #CCFFFF">
+<table width="100%" frame="border ">
+  
+  <!-- 定义列 -->
+      <tr>
+           <td>序号</td>
+           <td>编码</td>
+           <td>类别</td>
+           <td>名称</td>
+           <td>型号</td>
+           <td><br>长</td>
+		   <td>规格<br>宽</td>
+		   <td><br>厚</td>
+           <td>单位<td>
+           <td>数量</td >
+           <td>收货数量</td>
+           <td>备注</td>
+      </tr>
+	   <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+		   <td></td>
+		   <td></td>
+           <td><td>
+           <td></td >
+           <td></td>
+           <td></td>
+      </tr>
+
+
+
+
  
-	<script src="../../lib/angular-1.4.5/angular.min.js"></script>
-	<script src="../../lib/angular-1.4.5/angular-route.min.js"></script>
-	<script src="js/CaiGouShouHuo.js"></script>
-	
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
 
-	<table class="table table-bordered table-condensed" align="center"> 
-          <thead> 
-             <tr> 
-               <th rowspan="2" class="text-center">序号</th> 
-               <th rowspan="2" class="text-center">编码</th> 
-               <th rowspan="2" class="text-center">类别</th> 
-               <th rowspan="2" class="text-center">名称</th> 
-               <th rowspan="2" class="text-center">型号</th> 
-               <th rowspan="2" class="text-center">长</th> 
-               <th rowspan="2" class="text-center">宽</th> 
-               <th rowspan="2" class="text-center">厚</th> 
-               <th rowspan="2" class="text-center">单位</th> 
-               <th rowspan="2" class="text-center">数量</th> 
-               <th rowspan="2" class="text-center">收货数量</th> 
-               <th rowspan="2" class="text-center">备注</th> 
-              </tr> 
-            
-        <tbody ng-repeat="item in items"> 
-             <tr> 
-              <td rowspan="2" class="text-center">{{item.number}}</td> 
-              <td rowspan="2" class="text-center">{{item.encoding}}</td> 
-              <td rowspan="2" class="text-center">{{item.classes}}</td> 
-			  <td rowspan="2" class="text-center">{{item.name}}</td> 
-              <td rowspan="2" class="text-center">{{item.type}}</td> 
-              <td rowspan="2" class="text-center">{{item.long}}</td>
-			  <td rowspan="2" class="text-center">{{item.wide}}</td> 
-              <td rowspan="2" class="text-center">{{item.hight}}</td> 
-              <td rowspan="2" class="text-center">{{item.units}}</td>
-			  <td rowspan="2" class="text-center">{{item.count}}</td> 
-              <td rowspan="2" class="text-center">{{item.receiving count}}</td> 
-              <td rowspan="2" class="text-center">{{item.remark}}</td>
-			  
-     
-            </tr> 
-        </tbody> 
-        </table> 
+ 
 
-	
-	
+</div>
+<div style="border:1px #000000 solid;  margin-top:220PX; width:1024px; height:40px; position:fixed; display:inline-table ; background-color: #CCFFFF">
+<button style=" font-size:20px">上传材料</button>    操作人：        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                操作时间:
+</div>
+</div>
+
+    <!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 	
   </body>
 </html>
